@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*******Navigation*********/
+#Navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img{
+    color: #555;
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+#Navbar ul li a:hover{
+    color: #007bff !important;
+}
+.navbar{
+    background: #fff;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.nav-link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+/*******slider*******/
+#slider{
+    width: 100%;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 70px;
+    color: rgba(0,0,0,0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.carousel-caption p{
+    color: rgba(0,0,00.8);
+    font-weight: 400;
+    font-size: 30px;
+}
+.carousel-caption h5 span, .carousel-caption p span{
+    color: #800000;
+}
+#about{
+    padding: 50px 0px;
+    color: #555;
+}
+#about .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content{
+    color: #555;
+    padding-top: 20px;
+}
+.skills-bar p{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.progress-bar{
+    border-radius: 16px;
+}
+.progress{
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+/*************Services*************/
+#services{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('./service.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    color: #efefef !important;
+}
+#services h2{
+
+    color: #efefef !important;
+
+}
+#services h2::after{
+    background: #efefef;
+}
+.services{
+    margin-top: 40px;
+}
+.services .icon{
+    font-size: 35px;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services .col-md-3:hover{
+    background: #007bff;
+    transition: 0.7s;
+    cursor: pointer;
+}
+#team{
+    padding: 50px 0px;
+    color: #555;
+}
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #555;
+}
+h2::after{
+    content: '';
+    height: 3px;
+    width: 170px;
+    background:#007bff; 
+    display: block;
+    margin: 20px auto 5px;
+}
+.profile-pic{
+    margin-top: 25px; 
+}
+.profile-pic .img-box{
+    opacity: 1;
+    position: relative;
+    display: block;
+}
+.profile-pic .img-box img{
+    filter: grayscale(1);
+    width: 250px;
+    height: 300px;
+}
+.profile-pic .img-box img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+.profile-pic h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#team .fa{
+    width: 25px;
+    height: 25px;
+    color: 007bff;
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+.img-box ul{
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    opacity: 0;
+    z-index: 2;
+}
+.img-box ul li{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box ul, img-box ul li{
+    transition: 0.5s;
+}
+/*********promo************/
+#promo{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./promo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 100px;
+}
+#price{
+    background: #efefef;
+    padding: 50px 0px;
+}
+.single-price{
+    background: #fff;
+    width: 100%;
+    display: inline;
+    margin: 10px auto;
+    float: left;
+    transition: 0.5s;
+}
+.single-price:hover{
+    box-shadow: 0 2px 20px #333;
+}
+.price-head{
+    background-color: #007bff !important;
+    text-align: center;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    width: 100%;
+}
+.price-head h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+.price-head p{
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+#price span{
+    font-size: 15px;
+}
+.price-content{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+.price-content ul li{
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid #efefef;
+}
+ul li:last-child{
+    border: none;
+}
+.price-content i{
+    padding-right: 10px;
+}
+.price-content .fa-check-circle{
+    color: green;
+}
+.price-content .fa-times-circle{
+    color: red;
+}
+.price-button{
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 15px 15px 30px;
+    width: 100%;
+}
+.buy-btn{
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color: #007bff;
+    transition: 0.5s;
+    color: #fff;
+}
+.buy-btn:hover{
+    border-color: 1px solid #fff;
+    background-color: #3f51bf; 
+    color: #fff !important;
+    text-decoration: none !important;
+}
+#testimonials{
+    padding: 50px 0px;
+}
+#testimonials .row{
+    margin-top: 30px;
+}
+#testimonials .col-md-4{
+    margin: 40px auto;
+}
+.profile{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%
+}
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+}
+.profile h3{
+    font-size: 20px;
+    color: #007bff;
+    margin-top: 15px;
+}
+.profile h3 span{
+    font-size: 10px;
+    color: #333;
+}
+#testimonials blockquote{
+    font-size: 20px;
+    line-height: 30px;
+}
+#testimonials blockquote::before{
+    content: '\22';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+#testimonials blockquote::after{
+    content: '\22';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+.profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#contact{
+        padding: 50px 0px;
+        background: #efefef;
+        color: #777;
+}
+.contact-form{
+    padding: 15px;
+}
+.form-control{
+    border: none !important;
+    border-radius: 0 !important;
+}
+::placeholder{
+    color: #999 !important;
+}
+.follow{
+    background: #fff;
+    padding: 15px;
+    margin: 10px;
+}
+.contact-info .fa{
+    padding: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+#footer{
+    background: #333;
+    color: #fff;
+  padding: 15px;
+}
+.fa-heart-o{
+    margin:5px;
+    color: red;
+}
